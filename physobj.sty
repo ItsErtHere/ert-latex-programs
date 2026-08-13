@@ -1,0 +1,52 @@
+\ProvidesPackage{physobj}[2025/01/09 Concepts]
+\RequirePackage{physdiacs}
+%Operators
+\newcommand{\dif}{\textbf{d}}
+\newcommand{\frun}[1]{\left(\frac{\Um}{\Upsilon}\right)^{#1}}
+\newcommand{\units}[1]{\mspace{3mu}\left[#1\right]}
+\newcommand{\tab}{\mspace{20mu}}
+\newcommand{\diff}[2]{\frac{\dif #1}{\dif #2}}
+\newcommand{\dff}[3]{\frac{\dif{^#3} #1}{\dif {#2}^{#3}}}
+\newcommand{\frcu}[3]{\units{\frac{#1}{#2}\frun{#3}}}
+%SI Units
+\newcommand{\Ukg}{\text{kg}}
+\newcommand{\ups}[1]{#1_\upupsilon}
+\newcommand{\uns}[1]{#1_{\upupsilon^n}}
+\newcommand{\upi}{\upupsilon}
+\newcommand{\Um}{\text{m}}
+\newcommand{\UK}{\text{K}}
+\newcommand{\Us}{\text{s}}
+\newcommand{\UC}{\text{C}}
+\newcommand{\UA}{\text{A}}
+\newcommand{\Umol}{\text{mol}}
+\newcommand{\Ucd}{\text{cd}}
+\newcommand{\Ulx}{\text{lux}}
+\newcommand{\Urad}{\text{rad}}
+\newcommand{\Ulm}{\text{lm}}
+\newcommand{\Utb}{\text{tb}} 
+\newcommand{\UJ}{\text{J}}
+\newcommand{\UPa}{\text{Pa}}
+\newcommand{\mpm}{
+\begin{tikzpicture}
+\draw[xscale=2,yscale=2] (0,0) -- (2pt,0) -- (1pt,0) -- (1pt,2pt) -- (0,2pt) -- (2pt,2pt); 
+\draw[xscale=2,yscale=2] (0,1pt) -- (2pt,1pt); 
+\end{tikzpicture}}
+%Values
+\newcommand{\Lms}{\DCt{B}}
+\newcommand{\lms}{\DCt{b}}
+\newcommand{\Freq}{\DCt{F}}
+\newcommand{\freq}{\DCt{f}}
+\newcommand{\Inrta}{\DCt{I}}
+\newcommand{\inrta}{\DCt{\mathi}}
+\newcommand{\Amom}{\DCt{L}}
+\newcommand{\amom}{\DCt{l}}
+\newcommand{\Spynt}{\DCt{S}}
+\newcommand{\spynt}{\DCt{s}}
+\newcommand{\Temp}{\DCt{T}}
+\newcommand{\temp}{\DCt{t}}
+\newcommand{\Vol}{\DCt{V}}
+\newcommand{\vol}{\DCt{v}}
+\newcommand{\Eme}{\DCt{\Lambda}}
+\newcommand{\eme}{\DCt{\lambda}}
+
+\newcommand{\fracu}[3]{\left[\frac{#1}{#2}\left(\frac{\Um}{\Upsilon}\right)^{#3}\right]}
